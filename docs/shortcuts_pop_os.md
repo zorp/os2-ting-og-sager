@@ -17,3 +17,8 @@
 | Move to the right screen      | Shift+Super+Right        |
 | Move to the left screen       | Shift+Super+Left         |
 
+## Dim inactive windows
+
+| Handling                     | Tastaturgenvej          |
+|-------------------------------|--------------------------|
+| Toggle dim       | Super+g               |
