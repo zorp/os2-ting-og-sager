@@ -1,8 +1,8 @@
 # The Missing Level: Why EU Open Source Fails Locally
 
-Script for FOSDEM talk @ Dev Room: Open Source and EU Policy
-URL: https://fosdem.org/2026/schedule/event/XCQW98-why-eu-open-source-fails-locally/ 
-Author: Rasmus Frey, rasmus@os2.eu
+Script for FOSDEM talk @ Dev Room: Open Source and EU Policy  
+URL: https://fosdem.org/2026/schedule/event/XCQW98-why-eu-open-source-fails-locally/  
+Author: Rasmus Frey, rasmus@os2.eu  
 
 ## Minute 0:00-1:00 | Opening
 
