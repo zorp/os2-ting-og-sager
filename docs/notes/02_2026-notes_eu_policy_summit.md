@@ -5,3 +5,6 @@
 
 # Frank Feldmann, SUSE
 * You need to be an active customer, Frank Feldmann
+
+# Panel: Open Source & Economic Security
+* We need real support for the municipal level. We need clear paths, Dirk Schrödter

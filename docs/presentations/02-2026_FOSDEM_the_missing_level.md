@@ -10,13 +10,9 @@ I want to start by being very explicit.
 
 What I'm about to say is a deliberately sharpened argument.
 
-Reality is of course more complex than what I’m going to say.
+What I share draws from practical experience leading Denmark's OS2 collaboration - years of attempting to make open source work at local municipal scale.
 
-That said, I believe that sharpening the argument helps us see a structural problem that often disappears in nuance.
-
-What I share today draws from practical experience leading Denmark's OS2 collaboration - not from academic research, but from years of attempting to make open source work at local municipal scale.
-
-The claim I want to explore today:
+The claim is:
 
 **European open source policy fails locally - because it is designed for the wrong level.**
 
@@ -38,8 +34,6 @@ Denmark is not unique in this.
 
 Across Europe, the form differs. But implementation and risk are pushed downward, while control remains upward.
 
-I draw primarily from Danish experience in OS2 - but the pattern of misaligned responsibility appears structurally similar across decentralised systems in Europe.
-
 Local authorities carry responsibility for delivery.
 
 But they often lack incentives, competencies, and protection against risk.
@@ -54,9 +48,9 @@ Digital sovereignty becomes aspirational.
 
 And strategies remain documents rather than systems.
 
-From my work in Denmark's OS2 community, where more than 85% of municipalities collaborate on open source solutions, one insight stands out:
+From my work in Denmark's OS2 community, one insight stand out:
 
-If policy is not designed for the level that must act on it, it will fail regardless of intent.
+Policy designed for one level but implemented at another transfers risk without transferring power - and that structure guarantees failure.
 
 ## Minute 3:30–6:30 | Point 2 - Not a technology problem
 
@@ -74,11 +68,7 @@ A typical Danish municipality already runs 300 to 500 IT systems.
 
 Many are deeply integrated.
 
-Of course many depend on proprietary platforms, often Microsoft-based.
-
 This is not unique to Denmark.
-
-This pattern repeats across Europe - in decentralised countries, in centralised ones, and everywhere in between
 
 Complexity is not new.
 
@@ -100,7 +90,7 @@ And this is not an accident.
 
 Governance, contracts, competence profiles, and leadership structures are set up to minimise blame - not to enable transition.
 
-And there is another uncomfortable truth.
+And another uncomfortable truth.
 
 Large IT vendors are often invited into advisory roles.
 
@@ -140,11 +130,11 @@ We are writing strategies. And every strategy assumes the implementation level w
 
 It won't.
 
-## Minute 8:30–9:30 | Closing
+### Minute 8:30–9:30 | Closing
 
 We know what needs to change.
 
-The question is whether we are willing to stop treating open source as the solution - and start treating governance, risk, and power as the actual challenge.
+The question is whether we are willing to start treating governance, risk, and power as the actual challenge.
 
 Because right now, every new strategy, every new funding program, every new OSPO initiative assumes the missing level will somehow figure it out.
 
@@ -152,8 +142,38 @@ It won't.
 
 So what will you do differently on Monday?
 
-Will you write another strategy for sovereign cloud infrastructure?
+Will you ask: who bears the risk, who holds the power, and what structural conditions must change before any of this can work at scale?
 
-Or will you ask: who bears the risk, who holds the power, and what structural conditions must change before any of this can work at scale?
+If you want to move someone, you must first understand them.
+
+That means standing where they stand, not where you want them to be standing.
 
 Thank you.
+
+
+# Panel: Public Procurement for Digital Sovereignty
+
+> Primary question and answer in the panel after my talk  
+> URL: [https://fosdem.org/2026/schedule/event/WKCBGM-procurement-sovereignty/](https://fosdem.org/2026/schedule/event/WKCBGM-procurement-sovereignty/)  
+> Author: Rasmus Frey, rasmus@os2.eu  
+
+
+**Question:** What policy action can the EU take now, particularly with the Public Procurement Framework revision?
+
+**Answer:** This is one of those questions where at first I think I have an answer, but the the answer opens three new problems. And I’m in no way an expert on procurement - but let me share where my thoughts.
+
+Procurement must actively protect public actors' room to operate - not just permit it. That requires some things:
+
+**First: A procurement must require transparent exit-cost as a standard evaluation criteria.**
+
+And not just technical migration cost - but the total cost of transition. What does it actually cost to leave this specific vendor/product in let’s say three years? This makes the lock-in economically visible before the contract is signed, not after.
+
+**Second: The EU should develop and maintain standardized procurement specifications for digital sovereignty.**
+
+Not guidelines. Not recommendations. But actual specifications that national and local authorities can use without bearing legal risk. And to take the vision further. If we're serious about this, these specifications should themselves be maintained as an open source project - with transparent governance and professional resourcing …. Let’s Walk the talk.
+
+**Third: Somehow establish legal safe harbor for authorities who use these specifications.**
+
+Right now, local implementers bear all the risk when they challenge vendor dominance and there are currently tools in the box not being used because of risk-avoidance. If the EU wants local actors to implement EU ambitions, the EU must bear the risk when those actors follow EU guidance.
+
+I have not solved this. The point is that we must design the structures that can carry on the strategies. The procurement revision is an opportunity to do it differently - to align risk with ambition, and to activate the level where change must actually happen.
