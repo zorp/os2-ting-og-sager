@@ -1,8 +1,10 @@
 ---
 title: The Missing Level, Why EU Open Source Fails Locally
 layout: default
+av_exclude: true
+# parent: Præsentationer
 # nav_order: 1
-#has_children: true
+# has_children: true
 has_toc: false
 ---
 
