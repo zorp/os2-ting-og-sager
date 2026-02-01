@@ -1,3 +1,11 @@
+---
+title: The Missing Level, Why EU Open Source Fails Locally
+layout: default
+# nav_order: 1
+#has_children: true
+has_toc: false
+---
+
 # The Missing Level: Why EU Open Source Fails Locally
 
 > Script for FOSDEM talk @ Dev Room: Open Source and EU Policy  
