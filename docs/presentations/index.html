@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hvad skal der til, for at fælles løsninger faktisk bliver genbrugt? · OS2</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/white.css">
+  <style>
+    :root { --green:#3A7F3B; --dark:#214b2e; --light:#e6f0e4; --mid:#b9d5b6; --grey:#e4e8e8; --ink:#20332a; --r-main-font:'Open Sans',Arial,sans-serif; --r-heading-font:var(--r-main-font); --r-main-color:var(--ink); --r-heading-color:var(--green); --r-heading-text-transform:none; --r-background-color:#fff; }
+    .reveal { font-size:30px; } .reveal .slides { text-align:left; }
+    .reveal .slides section { box-sizing:border-box; padding:34px 65px 48px; height:100%; }
+    .reveal h2 { font-size:1.65em; line-height:1.12; margin:0 0 22px; font-weight:750; letter-spacing:-.035em; }
+    .eyebrow { font-size:16px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--green); margin-bottom:16px; }
+    .diagram { width:100%; height:365px; display:block; margin:12px auto; }
+    .diagram text { font-family:'Open Sans',Arial,sans-serif; }
+    .takeaway { margin:20px 0 0; padding:15px 22px; border-left:6px solid var(--green); background:var(--light); font-size:25px; font-weight:650; line-height:1.3; }
+    .brand { position:absolute; bottom:12px; left:65px; font-size:19px; font-weight:800; color:var(--green); letter-spacing:-.04em; }
+    .brand small { color:#56665c; font-size:12px; font-weight:400; letter-spacing:0; margin-left:12px; }
+    .motif { position:absolute; right:65px; bottom:14px; width:54px; height:24px; border:3px solid var(--green); border-radius:18px; opacity:.55; }
+    .motif::after { content:''; position:absolute; right:3px; top:3px; width:18px; height:18px; background:var(--green); border-radius:50%; }
+    .reveal .slide-number { font-size:14px; background:transparent; color:var(--green); }
+    .reveal .controls { color:var(--green); } .reveal .progress { color:var(--green); }
+    .notes { font-size:16px; } .hint { position:fixed; left:12px; bottom:5px; font:11px Arial,sans-serif; color:#65756a; z-index:10; }
+    @media print { .hint { display:none; } }
+  </style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<!-- SLIDE 1 -->
+<section>
+  <div class="eyebrow">Hvad skal der til, for at fælles løsninger faktisk bliver genbrugt?</div>
+  <h2>Fra ildsjæle til hverdag</h2>
+  <svg class="diagram" viewBox="0 0 1100 365" role="img" aria-label="Ildsjæle, medskabere og anvendere understøttet af fælles mekanismer">
+    <defs><g id="person"><circle cy="-12" r="10"/><path d="M-16 17 Q-16 -2 0 -2 Q16 -2 16 17Z"/></g></defs>
+    <g fill="#e6f0e4"><rect x="10" y="10" width="330" height="235" rx="12"/><rect x="385" y="10" width="330" height="235" rx="12" fill="#cde1ca"/><rect x="760" y="10" width="330" height="235" rx="12" fill="#b0d0ad"/></g>
+    <g fill="#3A7F3B"><use href="#person" x="175" y="82"/><use href="#person" x="510" y="65"/><use href="#person" x="590" y="65"/><use href="#person" x="550" y="112"/><use href="#person" x="845" y="55"/><use href="#person" x="925" y="55"/><use href="#person" x="1005" y="55"/><use href="#person" x="845" y="108"/><use href="#person" x="925" y="108"/><use href="#person" x="1005" y="108"/></g>
+    <g fill="#214b2e" text-anchor="middle" font-size="27" font-weight="700"><text x="175" y="172">Ildsjæle</text><text x="550" y="172">Medskabere</text><text x="925" y="172">Anvendere</text></g>
+    <g fill="#214b2e" text-anchor="middle" font-size="20"><text x="175" y="207">Tager initiativ</text><text x="550" y="207">Investerer og tager ansvar</text><text x="925" y="207">Skaber værdi i praksis</text></g>
+    <g stroke="#3A7F3B" stroke-width="4" fill="none"><path d="M348 125 H375 l-10 -10 M375 125 l-10 10"/><path d="M723 125 H750 l-10 -10 M750 125 l-10 10"/></g>
+    <rect x="10" y="265" width="1080" height="85" rx="10" fill="#3A7F3B"/>
+    <g fill="white" text-anchor="middle"><text x="550" y="299" font-size="24" font-weight="700">Fælles organisatoriske mekanismer</text><text x="550" y="329" font-size="20">Governance · Finansiering · Forvaltning · Udbredelse</text></g>
+  </svg>
+  <p class="takeaway">Stor udbredelse er ikke nødvendigvis det samme som bredt samarbejde og ejerskab.</p>
+  <aside class="notes">
+    <p><strong>Indledning + talepunkt · ca. 2 minutter</strong></p>
+    <p>I den offentlige sektor taler vi meget om fælles løsninger, genbrug og digital suverænitet. Om at undgå, at vi hver især opfinder den dybe tallerken. Det er svært at være uenig i ambitionerne. Men gennem mit arbejde i OS2 oplever jeg en forskel på vores ambitioner og vores adfærd. Vi vil gerne have fælles løsninger. Men vil vi også fælles ejerskab og de forpligtelser som følger med?</p>
+    <p>I OS2 har vi 91 medlemmer, 32 projekter og over 600 anvendelser. Vi har vist, at genbrug på tværs er muligt. Men vi har også erfaringer med, hvor det bliver svært.</p>
+    <p>Jeg forklarer det med, at vi har brug for tre typer aktører. Ildsjælene og entusiasterne, der ser mulighederne, eksperimenterer og sætter noget i gang. Organisationer, der ser værdien, investerer og tager medansvar. Og den brede masse, der tager løsningerne i brug. Vi har brug for mekanismer, der gør, at løsningerne rammer hverdagen.</p>
+    <p>Det er ikke et problem, at mange organisationer blot er kunder eller forbrugere. Det er først, når løsningerne bliver anvendt, at vi for alvor realiserer værdien. Udfordringen opstår, når det gang på gang er de samme få organisationer, der skal tage initiativ, investere og bære ansvaret. Vi kan have stor udbredelse uden bredt funderet ejerskab. Det gør fællesskabet sårbart og det introducere en anden form for risiko.</p>
+  </aside>
+</section>
+<!-- SLIDE 2 -->
+<section>
+  <div class="eyebrow">Organisatorisk kapacitet</div>
+  <h2>Vi har bemandet os til at være kunder</h2>
+  <svg class="diagram" viewBox="0 0 1100 365" role="img" aria-label="Kapacitet til at købe sammenlignet med kapacitet til at eje">
+    <rect x="10" y="10" width="525" height="340" rx="12" fill="#e4e8e8"/><rect x="565" y="10" width="525" height="340" rx="12" fill="#e6f0e4"/>
+    <g font-size="30" font-weight="700"><text x="42" y="63" fill="#455752">Kapacitet til at købe</text><text x="597" y="63" fill="#3A7F3B">Kapacitet til at medudvikle og eje</text></g>
+    <g stroke="#9aa8a0" stroke-width="1"><path d="M42 84 H500"/><path d="M597 84 H1055"/></g>
+    <g font-size="25" fill="#20332a"><text x="42" y="128">Kravspecifikation</text><text x="42" y="175">Udbud og indkøb</text><text x="42" y="222">Kontraktstyring</text><text x="42" y="269">Leverandørstyring</text><text x="42" y="316">Implementering</text><text x="597" y="128">Produktledelse</text><text x="597" y="175">Teknisk forvaltning</text><text x="597" y="222">Fælles arkitektur</text><text x="597" y="269">Fælles prioritering</text><text x="597" y="316">Fællesskabsopbygning</text></g>
+  </svg>
+  <p class="takeaway">Hvis vi ønsker en anden adfærd, skal vi også skabe forudsætningerne for den.</p>
+  <aside class="notes">
+    <p><strong>Ca. 2 minutter</strong></p>
+    <p>Jeg tror ikke nødvendigvis, at offentlige organisationer mangler viljen til at indgå i fælles ejerskab. Men mange mangler de organisatoriske forudsætninger.</p>
+    <p>Gennem mange år har vi opbygget IT-organisationer, der er dygtige til at gennemføre udbud, købe løsninger, implementere dem og styre leverandører. Og hvis det er det, vi har bemandet vores organisationer til, så er det selvfølgelig også det, vi gør.</p>
+    <p>Men hvor mange offentlige IT-organisationer har egentlig opbygget kapacitet til at indgå aktivt i et fælles produktejerskab? Til at bidrage som medudviklere med arkitekturkompetencer, produktledelse og fælles prioriteringer? Til at stille medarbejderressourcer til rådighed, som også kommer andre organisationer til gode?</p>
+    <p>Hvis en medarbejder i én myndighed bruger 100 timer på at hjælpe en anden myndighed med at tage en fælles løsning i brug, betragter vi så det som en god investering? For fællesskabet kan det være en rigtig god investering. Men hvordan ser det ud i den enkelte organisations budget og opgaveportefølje?</p>
+    <p>Det er en ledelsesmæssig beslutning, hvilken kapacitet vi opbygger. Men det kan også kræve politisk retning og et mandat på et højere niveau, som gør det legitimt at investere ressourcer på tværs. Hvis vi ønsker en anden adfærd, skal vi også skabe forudsætningerne for den.</p>
+  </aside>
+</section>
+<!-- SLIDE 3 -->
+<section>
+  <div class="eyebrow">Genbrug på forskellige niveauer</div>
+  <h2>Vi genbruger allerede. Bare ikke på alle niveauer.</h2>
+  <svg class="diagram" viewBox="0 0 1100 365" role="img" aria-label="Tre niveauer af genbrug med stigende typisk organisatorisk kompleksitet">
+    <rect x="10" y="8" width="925" height="108" rx="10" fill="#eed5bd"/><rect x="10" y="128" width="925" height="108" rx="10" fill="#cde1ca"/><rect x="10" y="248" width="925" height="108" rx="10" fill="#a8cda5"/>
+    <g font-size="30" font-weight="700" fill="#20332a"><text x="43" y="50">Komplette IT-løsninger</text><text x="43" y="170">Komponenter og services</text><text x="43" y="290">Teknologiske fundamenter</text></g>
+    <g font-size="23" fill="#20332a"><text x="43" y="84">Funktionalitet, arbejdsgange og forvaltning</text><text x="43" y="204">Moduler, biblioteker og integrationer</text><text x="43" y="324">Frameworks, databaser og platforme</text></g>
+    <path d="M975 350 V15 l-12 15 M975 15 l12 15" fill="none" stroke="#3A7F3B" stroke-width="4"/><text transform="translate(1020 182) rotate(-90)" text-anchor="middle" font-size="21" fill="#214b2e">Organisatorisk kompleksitet</text>
+  </svg>
+  <p class="takeaway">Vil vi tilpasse løsningen til os, eller er vi også villige til at tilpasse os løsningen?</p>
+  <aside class="notes">
+    <p><strong>Ca. 1 minut</strong></p>
+    <p>Det interessante er, at vi allerede er enormt dygtige til at genbruge teknologi. Moderne softwareudvikling er afhængig af genbrug af frameworks, biblioteker, databaser og andre teknologiske komponenter. Her er genbrug en naturlig del af vores måde at arbejde på. Der tales om at omkring 80% af moderne software udgøres af open source komponenter</p>
+    <p>Men når vi bevæger os op på niveauet for den komplette løsning, sker der noget. Pludselig har vi svært ved at se os selv i det, andre har skabt. Løsningen passer ikke helt til vores arbejdsgange. Den understøtter ikke præcis vores behov. Den er måske ikke bygget efter vores arkitekturprincipper.</p>
+    <p>Vi vil gerne have en løsning, der er udviklet specifikt til os. Men genbrug på løsningsniveau handler også om at acceptere nogle af de valg, andre har truffet.</p>
+    <p>Skal vi altid tilpasse løsningen til vores organisation, eller er vi også villige til at tilpasse vores organisation til en fælles løsning? Jo tættere vi kommer på den komplette løsning, desto mere bliver genbrug ofte en organisatorisk disciplin og knapt så meget et spørgsmål om teknologi.</p>
+  </aside>
+</section>
+<!-- SLIDE 4 -->
+<section>
+  <div class="eyebrow">Fællesskabet som præmis</div>
+  <h2>At dele er ikke det samme som at skabe noget fælles</h2>
+  <svg class="diagram" viewBox="0 0 1100 365" role="img" aria-label="To veje: udvikle lokalt og derefter dele, eller udvikle med henblik på fællesskab">
+    <g font-size="25" font-weight="700" text-anchor="middle" fill="#20332a"><text x="270" y="29">Udvikle og derefter dele</text><text x="830" y="29">Udvikle til fællesskabet</text></g>
+    <g fill="#e4e8e8"><rect x="65" y="49" width="410" height="57" rx="8"/><rect x="65" y="126" width="410" height="57" rx="8"/><rect x="65" y="203" width="410" height="57" rx="8"/></g>
+    <rect x="65" y="280" width="410" height="62" rx="8" fill="#eed5bd"/>
+    <g fill="#cde1ca"><rect x="625" y="49" width="410" height="57" rx="8"/><rect x="625" y="126" width="410" height="57" rx="8"/><rect x="625" y="203" width="410" height="57" rx="8"/></g><rect x="625" y="280" width="410" height="62" rx="8" fill="#3A7F3B"/>
+    <g stroke="#70877a" stroke-width="3" fill="none"><path d="M270 106 V126 l-7 -7 M270 126 l7 -7 M270 183 V203 l-7 -7 M270 203 l7 -7 M270 260 V280 l-7 -7 M270 280 l7 -7"/><path d="M830 106 V126 l-7 -7 M830 126 l7 -7 M830 183 V203 l-7 -7 M830 203 l7 -7 M830 260 V280 l-7 -7 M830 280 l7 -7"/></g>
+    <g text-anchor="middle" font-size="24" fill="#20332a"><text x="270" y="85">Mit behov</text><text x="270" y="162">Min løsning</text><text x="270" y="239">Offentliggørelse</text><text x="270" y="318">Andre kan genbruge</text><text x="830" y="85">Flere organisationer</text><text x="830" y="162">Fælles behov</text><text x="830" y="239">Fælles design og udvikling</text><text x="830" y="318" fill="white" font-weight="700">Fælles produkt</text></g>
+  </svg>
+  <p class="takeaway">At gøre en løsning tilgængelig er ikke det samme som at gøre den genbrugelig.</p>
+  <aside class="notes">
+    <p><strong>Ca. 1 minut</strong></p>
+    <p>I OS2 ser vi eksempler på organisationer, der har udviklet en digital løsning til sig selv og efterfølgende gerne vil dele den med andre. Det er i udgangspunktet enormt positivt. Men læg mærke til rækkefølgen.</p>
+    <p>Man har udviklet noget til sig selv, som man selv synes er så godt, at andre også burde synes, det er godt. Det er noget andet end at udvikle med det formål, at flere organisationer skal kunne medudvikle, anvende, eje og forvalte løsningen.</p>
+    <p>For så ville man måske have truffet andre beslutninger om arkitektur, funktionalitet, dokumentation og finansiering. Og måske endnu vigtigere: Man ville have involveret andre i de beslutninger.</p>
+    <p>Det betyder ikke, at alle fælles løsninger skal udvikles i fællesskab fra dag ét. Så risikerer vi at kvæle ildsjælenes initiativ i koordinering. Men vi skal være bevidste om overgangen fra et lokalt projekt til et fælles produkt. Det kræver en aktiv indsats. Det sker ikke bare ved at offentliggøre kildekoden. At gøre en løsning tilgængelig er ikke det samme som at gøre den genbrugelig.</p>
+  </aside>
+</section>
+<!-- SLIDE 5 -->
+<section>
+  <h2 style="margin-bottom:40px;">Fra én samlet leverance til et økosystem</h2>
+  <svg class="diagram" viewBox="0 0 1100 465" role="img" aria-label="Traditionel samlet leverance sammenlignet med fælles offentligt produkt og flere specialiserede leverandørydelser">
+    <text x="10" y="23" font-size="21" font-weight="700" fill="#455752">Traditionel produktleverance</text>
+    <rect x="10" y="37" width="370" height="57" rx="8" fill="#e4e8e8"/><rect x="435" y="37" width="655" height="57" rx="8" fill="#c5cfcc"/>
+    <path d="M388 65 H426 l-10 -9 M426 65 l-10 9" fill="none" stroke="#70877a" stroke-width="3"/>
+    <text x="195" y="73" text-anchor="middle" font-size="23" fill="#20332a">Offentlig myndighed</text><text x="762" y="61" text-anchor="middle" font-size="22" font-weight="700" fill="#20332a">Én produktleverandør</text><text x="762" y="82" text-anchor="middle" font-size="16" fill="#20332a">Produkt · Udvikling · Drift · Support</text>
+    <g transform="translate(0, 100)">
+    <path d="M10 162 H1090" stroke="#bacac0" stroke-dasharray="5 5"/>
+    <text x="10" y="140" font-size="21" font-weight="700" fill="#3A7F3B">Fælles offentligt produktejerskab</text>
+    <g fill="#cde1ca"><rect x="100" y="151" width="140" height="38" rx="6"/><rect x="290" y="151" width="140" height="38" rx="6"/><rect x="480" y="151" width="140" height="38" rx="6"/><rect x="670" y="151" width="140" height="38" rx="6"/><rect x="860" y="151" width="140" height="38" rx="6"/></g>
+    <g fill="#214b2e" font-size="17" text-anchor="middle"><text x="170" y="176">Myndighed</text><text x="360" y="176">Myndighed</text><text x="550" y="176">Myndighed</text><text x="740" y="176">Myndighed</text><text x="930" y="176">Myndighed</text></g>
+    <g stroke="#3A7F3B" stroke-width="2" fill="none"><path d="M170 189 V207 M360 189 V207 M550 189 V207 M740 189 V207 M930 189 V207"/></g>
+    <rect x="10" y="207" width="1080" height="68" rx="8" fill="#3A7F3B"/><text x="550" y="235" text-anchor="middle" fill="white" font-size="25" font-weight="700">Fælles open source-produkt</text><text x="550" y="259" text-anchor="middle" fill="white" font-size="18">Governance · Kodebase · Roadmap · Prioritering</text>
+    <g stroke="#3A7F3B" stroke-width="2"><path d="M95 275 V297 M277 275 V297 M459 275 V297 M641 275 V297 M823 275 V297 M1005 275 V297"/></g>
+    <g fill="#e6f0e4"><rect x="10" y="297" width="170" height="52" rx="6"/><rect x="192" y="297" width="170" height="52" rx="6"/><rect x="374" y="297" width="170" height="52" rx="6"/><rect x="556" y="297" width="170" height="52" rx="6"/><rect x="738" y="297" width="170" height="52" rx="6"/><rect x="920" y="297" width="170" height="52" rx="6"/></g>
+    <g font-size="17" font-weight="600" fill="#214b2e" text-anchor="middle"><text x="95" y="329">Vedligehold</text><text x="277" y="329">Review</text><text x="459" y="329">Udvikling</text><text x="641" y="329">Hosting</text><text x="823" y="329">Support</text><text x="1005" y="329">Implementering</text></g>
+  </g>
+  </svg>
+  <aside class="notes">
+    <p><strong>Ca. 2 minutter</strong></p>
+    <p>Open source bliver ofte betragtet som et billigere alternativ til traditionelle kommercielle produkter. Kan vi få den samme funktionalitet til en lavere pris? Det er et legitimt spørgsmål. Men hvis det er det eneste spørgsmål, overser vi nogle af de væsentligste værdier.</p>
+    <p>Open source og fælles ejerskab giver os mulighed for at organisere vores relation til det private marked på en anden måde. Fælles offentligt ejerskab betyder ikke, at det offentlige selv skal udvikle og drifte alle sine løsninger. Tværtimod.</p>
+    <p>Vi kan have leverandører, der specialiserer sig i at holde en kodebase sikker og vedligeholde den. Andre kan gennemføre review af den kode, der bliver leveret. Nogle kan udvikle ny funktionalitet, mens andre tilbyder hosting, support og implementeringsydelser.</p>
+    <p>Vi behøver ikke købe hele pakken hos én leverandør. Vi kan i stedet skabe et økosystem af leverandører omkring et fælles produkt. Det er også en mulighed for det private marked: flere selvstændige forretningsmuligheder, plads til specialiserede virksomheder og konkurrence om de enkelte ydelser. Det kan potentielt gøre kagen større.</p>
+    <p>Det kræver, at vi som offentlige ejere er i stand til at forvalte produktet og koordinere leverancerne. At nogen tager ansvar for den samlede løsning. Vi kan købe os til kompetencer og ydelser, men produktansvaret skal vi selv løfte. Det kan vi gøre i fællesskab.</p>
+  </aside>
+</section>
+<!-- SLIDE 6 -->
+<section>
+  <div class="eyebrow">Digital suverænitet gennem fælles ansvar</div>
+  <h2>Fra individuel til kollektiv kontrol</h2>
+  <svg class="diagram" viewBox="0 0 1100 365" role="img" aria-label="Separate produkter og afhængigheder over for fælles produkt og kollektiv handlekraft">
+    <g text-anchor="middle" font-size="25" font-weight="700" fill="#20332a"><text x="265" y="29">Individuelt ansvar</text><text x="835" y="29">Fælles ansvar</text></g>
+    <path d="M550 10 V300" stroke="#b9c7bd" stroke-dasharray="6 6"/>
+    <g fill="#e4e8e8"><rect x="20" y="55" width="150" height="64" rx="8"/><rect x="190" y="55" width="150" height="64" rx="8"/><rect x="360" y="55" width="150" height="64" rx="8"/></g>
+    <g fill="#c5cfcc"><rect x="20" y="180" width="150" height="64" rx="8"/><rect x="190" y="180" width="150" height="64" rx="8"/><rect x="360" y="180" width="150" height="64" rx="8"/></g>
+    <g fill="#cde1ca"><rect x="590" y="55" width="150" height="64" rx="8"/><rect x="760" y="55" width="150" height="64" rx="8"/><rect x="930" y="55" width="150" height="64" rx="8"/></g>
+    <g stroke="#70877a" stroke-width="3" fill="none"><path d="M95 119 V180 M265 119 V180 M435 119 V180"/></g>
+    <g stroke="#3A7F3B" stroke-width="3" fill="none"><path d="M665 119 V150 H835 V180 M835 119 V180 M1005 119 V150 H835"/></g>
+    <rect x="590" y="180" width="490" height="64" rx="8" fill="#3A7F3B"/>
+    <g text-anchor="middle" font-size="18" fill="#20332a"><text x="95" y="93">Myndighed</text><text x="265" y="93">Myndighed</text><text x="435" y="93">Myndighed</text><text x="665" y="93">Myndighed</text><text x="835" y="93">Myndighed</text><text x="1005" y="93">Myndighed</text><text x="95" y="219">Produkt</text><text x="265" y="219">Produkt</text><text x="435" y="219">Produkt</text><text x="835" y="219" fill="white" font-weight="700" font-size="24">Fælles produkt</text><text x="265" y="282" font-size="22">Separate afhængigheder</text><text x="835" y="282" font-size="22" font-weight="700">Kollektiv handlekraft</text></g>
+    <rect x="10" y="311" width="1080" height="44" rx="8" fill="#e6f0e4"/><text x="550" y="340" text-anchor="middle" font-size="22" fill="#214b2e">Digital suverænitet som en fælles kapacitet</text>
+  </svg>
+  <p class="takeaway">Vi kan opnå større uafhængighed af eksterne aktører ved at acceptere en større indbyrdes afhængighed.</p>
+  <aside class="notes">
+    <p><strong>Ca. 2 minutter</strong></p>
+    <p>Det bringer mig tilbage til digital suverænitet. Mange offentlige organisationer vil gerne have kontrol over deres egne løsninger. De vil gerne bestemme over funktionaliteten, arkitekturen og den fremtidige udvikling. Vi vil gerne eje vores eget. Men vi er ikke nødvendigvis lige så gode til at eje noget sammen.</p>
+    <p>Digital suverænitet behøver ikke betyde, at den enkelte myndighed skal kunne alting selv. Det kan også handle om, at vi som offentlig sektor i fællesskab har de nødvendige kompetencer, rettigheder og handlemuligheder.</p>
+    <p>Open source giver os muligheder. Men mulighederne realiserer ikke sig selv. Vi skal også have kapaciteten til at gøre brug af vores rettigheder. Og måske skal vi acceptere, at vi må afgive noget individuel kontrol for at opnå større kollektiv kontrol. Vi kan opnå større uafhængighed af eksterne aktører ved at acceptere en større indbyrdes afhængighed.</p>
+    <p>Så når vi spørger, hvad der skal til, for at fælles løsninger faktisk bliver genbrugt, tror jeg ikke, at vi alene skal lede efter svarene i teknologien. Vi skal også se på vores organisering, kultur, styringsmekanismer og ledelsesmæssige prioriteringer. Vi skal have politiske og strategiske ambitioner, der understøtter samarbejdet. Vi skal opbygge kapacitet til fælles ejerskab. Vi skal have et privat marked, der kan se mulighederne i at levere ydelser omkring fælles produkter. Og vi skal være villige til at investere i noget, der ikke kun skaber værdi for os selv.</p>
+    <p>For måske er den største udfordring ved genbrug ikke vores teknologi, men den måde, vi har organiseret offentlig digitalisering på. Det vil jeg gerne høre jeres perspektiver på.</p>
+  </aside>
+</section>
+
+<!-- Slide 7: Dialogforum -->
+<section>
+  <style>
+    .dialog-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .dialog-group {
+      background: #f0f5ef;
+      border-left: 5px solid #3A7F3B;
+      border-radius: 6px;
+      padding: 18px 22px;
+    }
+
+    .dialog-group h3 {
+      color: #3A7F3B;
+      font-size: 25px;
+      margin: 0 0 12px 0;
+      text-transform: none;
+    }
+
+    .dialog-group ul {
+      display: block;
+      font-size: 21px;
+      line-height: 1.35;
+      margin: 0 0 0 20px;
+    }
+
+    .dialog-group li {
+      margin-bottom: 8px;
+    }
+
+    .dialog-highlight {
+      color: #3A7F3B;
+      border-top: 2px solid #3A7F3B;
+      padding-top: 18px;
+      margin-top: 25px;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+  </style>
+
+  <h2>Hvad skal der til for at skabe mere genbrug?</h2>
+
+  <div class="dialog-grid">
+
+    <div class="dialog-group">
+      <h3>Erfaringer med genbrug</h3>
+      <ul>
+        <li>Hvornår har vi sidst genbrugt andres løsninger?</li>
+        <li>Er vi lige så villige til at genbruge som til at dele?</li>
+        <li>Er vi villige til at tilpasse os en fælles løsning?</li>
+      </ul>
+    </div>
+
+    <div class="dialog-group">
+      <h3>Organisering og ledelse</h3>
+      <ul>
+        <li>Er vi bemandet til at købe eller også til at eje?</li>
+        <li>Hvilken organisatorisk kapacitet mangler vi?</li>
+        <li>Hvordan får vi flere til at tage ansvar?</li>
+      </ul>
+    </div>
+
+    <div class="dialog-group">
+      <h3>Ejerskab og suverænitet</h3>
+      <ul>
+        <li>Vil vi afgive individuel kontrol for at opnå fælles kontrol?</li>
+        <li>Hvilket ansvar er vi villige til at påtage os?</li>
+        <li>Hvilken strategisk retning og hvilket mandat mangler vi?</li>
+      </ul>
+    </div>
+
+    <div class="dialog-group">
+      <h3>Marked og leverandører</h3>
+      <ul>
+        <li>Hvad forhindrer os i at købe specialiserede ydelser frem for hele produkter?</li>
+        <li>Kan vi tage produktansvaret på tværs af flere leverandører?</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <aside class="notes">
+
+    <h3>Dialog · 9–25 minutter</h3>
+
+    <p><strong>9–11:</strong> Individuel refleksion.</p>
+    <p><strong>11–17:</strong> Erfaringer og barrierer.</p>
+    <p><strong>17–22:</strong> Muligheder og løsninger.</p>
+    <p><strong>22–25:</strong> Fælles opsamling.</p>
+
+    <p>Vælg 3–4 spørgsmål afhængigt af deltagernes
+      interesser og erfaringer.</p>
+
+    <h3>Erfaringer med genbrug</h3>
+
+    <ol>
+      <li>Hvornår har I sidst genbrugt en løsning udviklet
+        af en anden offentlig organisation frem for at
+        udvikle eller købe jeres egen?</li>
+
+      <li>Er vi lige så villige til at genbruge andres
+        løsninger, som vi er til at få andre til at
+        genbruge vores?</li>
+
+      <li>Er vi villige til at tilpasse vores organisation
+        til en fælles løsning, eller forventer vi altid,
+        at løsningen tilpasses os?</li>
+    </ol>
+
+    <h3>Organisering og ledelse</h3>
+
+    <ol start="4">
+      <li>Hvad er jeres IT-organisation bemandet til?
+        At købe og implementere løsninger eller også
+        at eje og forvalte dem?</li>
+
+      <li><strong>Hvordan ville jeres ledelse reagere,
+        hvis I brugte 100 medarbejdertimer på at hjælpe
+        en anden myndighed med at tage en fælles
+        løsning i brug?</strong></li>
+
+      <li>Hvilken organisatorisk kapacitet skal vi
+        opbygge, hvis vi mener det alvorligt med
+        digital suverænitet?</li>
+
+      <li>Hvordan sikrer vi, at fælles løsninger ikke
+        bliver afhængige af de samme få ildsjæle
+        og organisationer?</li>
+    </ol>
+
+    <h3>Ejerskab og suverænitet</h3>
+
+    <ol start="8">
+      <li>Hvor meget individuel kontrol er vi villige
+        til at afgive for at opnå større fælles kontrol?</li>
+
+      <li>Hvilket ansvar er vi villige til at påtage os
+        for at opnå større digital suverænitet?</li>
+
+      <li>Hvad mangler vi af politiske beslutninger,
+        strategisk retning eller mandat for at kunne
+        samarbejde mere på tværs?</li>
+    </ol>
+
+    <h3>Marked og leverandører</h3>
+
+    <ol start="11">
+      <li>Hvad forhindrer os i at købe specialiserede
+        ydelser omkring et fælles produkt frem for
+        at købe den samlede løsning hos én leverandør?</li>
+
+      <li>Er vi som offentlige organisationer i stand
+        til at tage det samlede produktansvar, når
+        leverancerne kommer fra flere forskellige
+        leverandører?</li>
+    </ol>
+
+    <hr>
+
+    <h3>Afsluttende spørgsmål</h3>
+
+    <p><strong>Hvad skulle vi ændre i vores organisationer,
+      hvis genbrug skulle være førstevalget frem for
+      blot en mulighed?</strong></p>
+
+  </aside>
+</section>
+</div></div>
+<div class="hint">Piletaster: navigation · S: talernoter · Esc: oversigt · F: fuld skærm</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>
+<script>
+  // Gentaget footer. Erstat gerne tekstmarkøren med det officielle logo.
+  document.querySelectorAll('.slides > section').forEach(slide => {
+    const footer = document.createElement('div');
+    footer.className = 'brand';
+    footer.innerHTML = 'OS2 <small>Offentligt digitaliseringsfællesskab · Rasmus Frey</small>';
+    slide.append(footer);
+    const motif = document.createElement('div');
+    motif.className = 'motif';
+    motif.setAttribute('aria-hidden', 'true');
+    slide.append(motif);
+  });
+  try { localStorage.setItem('reveal-speaker-layout', 'tall'); } catch (error) { /* Browser may block storage. */ }
+  Reveal.initialize({ width:1280, height:720, margin:0.025, hash:true, center:false, slideNumber:'c/t', transition:'none', plugins:[RevealNotes] });
+</script>
+</body>
+</html>
