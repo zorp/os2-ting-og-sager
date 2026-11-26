@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Another AI Future Is Possible | Matrix-inspired OS2 slide</title>
+<style>
+  :root{--black:#020704;--green:#7dff9e;--bright:#e6ffeb;--muted:#a7d6b3;--line:#1a6137}
+  *{box-sizing:border-box}
+  html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--black);font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;color:var(--bright)}
+  main{position:relative;isolation:isolate;width:100vw;height:100dvh;min-height:420px;overflow:hidden;background:radial-gradient(ellipse at center,#0a2312 0%,#020b05 57%,#010402 100%)}
+  canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block}
+  .scanlines{position:absolute;inset:0;pointer-events:none;z-index:3;opacity:.3;background:repeating-linear-gradient(to bottom,transparent 0,transparent 3px,#0007 4px,transparent 5px)}
+  .vignette{position:absolute;inset:0;z-index:2;pointer-events:none;background:radial-gradient(ellipse at center,transparent 20%,#0006 64%,#000b 100%)}
+  .wrap{position:relative;z-index:4;display:flex;flex-direction:column;height:100%;padding:clamp(20px,3.5vw,60px) clamp(25px,5vw,105px)}
+  header,footer{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  header{font-size:clamp(10px,1vw,15px);letter-spacing:.15em;color:#9cecac;text-transform:uppercase}
+  .signal{display:inline-flex;gap:10px;align-items:center}.signal:before{content:'';width:8px;height:8px;border-radius:50%;background:#91ffae;box-shadow:0 0 11px #54ff7b,0 0 28px #4afa66;animation:breathe 4s ease-in-out infinite}
+  .id{color:#9dc5a5;letter-spacing:.12em}
+  .content{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+  .panel{text-align:center;width:min(1220px,100%);padding:clamp(28px,4vw,65px) clamp(22px,3.5vw,65px);background:linear-gradient(90deg,transparent,#010b05cf 15%,#010b05e5 50%,#010b05cf 85%,transparent);position:relative}
+  .kicker{letter-spacing:.28em;text-transform:uppercase;color:#98f5ae;font-size:clamp(12px,1.15vw,18px);margin:0 0 clamp(20px,3vh,35px);font-weight:600}
+  h1{margin:0;font-size:clamp(42px,6.5vw,112px);font-weight:760;letter-spacing:-.074em;line-height:1.11;text-wrap:balance}
+  .freedom{display:block;color:#effff0;text-shadow:0 0 32px #4bef6a29}
+  .capacity{display:block;color:#88ffa8;text-shadow:0 0 13px #32ff6a55,0 0 40px #3bfa5c22}
+  .divider{width:min(510px,55%);height:1px;margin:clamp(22px,3.5vh,38px) auto 22px;background:linear-gradient(90deg,transparent,#66f98d99,transparent)}
+  .explain{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(17px,1.65vw,27px);line-height:1.58;letter-spacing:-.022em;color:#c4ddcb;margin:0}
+  .explain b{font-weight:640;color:#ecfff1}
+  footer{font-size:clamp(10px,.9vw,14px);line-height:1.6;color:#a2c9a9;align-items:flex-end}
+  .tags{letter-spacing:.12em;text-transform:uppercase;max-width:47%}
+  .sovereignty{text-align:right;max-width:51%;color:#c2fbd0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(12px,1.1vw,18px);font-weight:550;letter-spacing:0}
+  .control{position:absolute;z-index:8;right:14px;top:14px;border:1px solid #379354;background:#06190de8;color:#cbffd7;padding:9px 12px;border-radius:6px;font:12px ui-monospace,monospace;cursor:pointer;opacity:0;transition:opacity .2s}
+  main:hover .control,.control:focus-visible{opacity:1}
+  @keyframes breathe{50%{opacity:.42;box-shadow:0 0 5px #54ff7b}}
+  @media(max-width:760px){.wrap{padding:28px 22px}.id{display:none}.panel{padding:28px 8px}.kicker{letter-spacing:.14em}h1{font-size:clamp(39px,9vw,69px)}.explain{font-size:clamp(15px,3.2vw,20px)}footer{flex-direction:column;align-items:center;text-align:center;gap:9px}.tags,.sovereignty{max-width:100%;text-align:center}}
+  @media(prefers-reduced-motion:reduce){.signal:before{animation:none}}
+  @media print{@page{size:landscape;margin:0}html,body,main{height:100%;width:100%;-webkit-print-color-adjust:exact;print-color-adjust:exact}.control{display:none}}
+</style>
+</head>
+<body>
+<main id="slide" aria-label="Matrix-inspired presentation slide. Freedom to act. Capacity to act. Open source gives freedom; collective organising builds capacity.">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="vignette"></div><div class="scanlines"></div>
+  <div class="wrap">
+    <header><span class="signal">ANOTHER AI FUTURE IS POSSIBLE</span><span class="id">OS2 // OPEN · COLLABORATION</span></header>
+    <div class="content"><section class="panel">
+      <p class="kicker">THE FUTURE IS NOT PREDETERMINED</p>
+      <h1><span class="freedom">Freedom to act.</span><span class="capacity">Capacity to act.</span></h1>
+      <div class="divider"></div>
+      <p class="explain"><b>Open source</b> gives us the freedom.<br><b>Organising</b> gives us the capacity.</p>
+    </section></div>
+    <footer><div class="tags">OPEN SOURCE / SHARED GOVERNANCE / CHOICE</div><div class="sovereignty">Digital sovereignty isn't something we buy.<br>It's something we build together.</div></footer>
+  </div>
+  <button id="full" class="control" aria-label="Toggle fullscreen">[ F ] FULLSCREEN</button>
+</main>
+<script>
+(()=>{'use strict';
+ const main=document.querySelector('main'),c=document.getElementById('rain'),x=c.getContext('2d',{alpha:false});
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+ const alphabet='012345789ABCDEFabcdef<>/{}[]+*#@%&|アイウエオカキクケコサシスセソタチツテトナニヌネノ';
+ let W=0,H=0,dpr=1,step=19,streams=[],last=0,frameId=0,paused=false;
+ const r=(a,b)=>a+Math.random()*(b-a);
+ function resize(){W=main.clientWidth;H=main.clientHeight;dpr=Math.min(devicePixelRatio||1,2);c.width=Math.round(W*dpr);c.height=Math.round(H*dpr);x.setTransform(dpr,0,0,dpr,0,0);step=Math.max(15,Math.min(23,W/94));
+ const cols=Math.ceil(W/step)+1;streams=Array.from({length:cols},(_,i)=>({x:i*step,y:r(-H,H),speed:r(35,110),trail:Math.round(r(8,28)),next:r(0,2),brightness:r(.28,.85),chars:[],phase:r(0,10)}));
+ x.fillStyle='#020704';x.fillRect(0,0,W,H);drawStill();}
+ function drawStill(){x.fillStyle='#020704';x.fillRect(0,0,W,H);for(const s of streams){const len=s.trail;for(let j=len-1;j>=0;j--){const yy=s.y-j*step;if(yy<0||yy>H)continue;const a=(1-j/len)*s.brightness;const v=alphabet[Math.floor(Math.random()*alphabet.length)];x.font=`${step*.82}px monospace`;x.fillStyle=j===0?`rgba(200,255,209,${Math.min(.9,a)})`:`rgba(44,235,94,${a*.58})`;x.fillText(v,s.x,yy);}}}
+ function paint(time){if(paused)return;let dt=Math.min((time-last)/1000,.05)||.016;last=time;
+ // Dark fade gives each glyph a falling phosphor trail, like a living code curtain.
+ x.fillStyle='rgba(1,7,3,.21)';x.fillRect(0,0,W,H);
+ x.font=`${step*.82}px ui-monospace,monospace`;
+ for(const s of streams){if(Math.random()<.0025) s.speed=r(35,108);s.y+=s.speed*dt;
+ if(s.y>H+s.trail*step){s.y=-r(0,H*.45);s.speed=r(35,110);s.brightness=r(.28,.87)}
+ const row=Math.floor(s.y/step),y=row*step;
+ if(y<0||y>H)continue;
+ const edge=Math.abs(s.x-W/2)/(W/2),centerGuard=(1-edge)*.53;
+ const alpha=s.brightness*(1-centerGuard);
+ const glyph=alphabet[Math.floor(r(0,alphabet.length))];
+ x.shadowBlur=0;x.fillStyle=`rgba(78,255,117,${alpha*.78})`;x.fillText(glyph,s.x,y);
+ if(Math.random()<.16){x.shadowColor='#80ff9e';x.shadowBlur=8;x.fillStyle=`rgba(221,255,227,${alpha*.95})`;x.fillText(glyph,s.x,y);x.shadowBlur=0;}
+ }
+ // Quiet network nodes layer: cooperative pathways emerge within the code.
+ const t=time*.00016;for(let i=0;i<13;i++){const px=W*(.16+.68*((i*.6180339887+t*.08)%1));const py=H*(.16+.68*((i*.3819660113+t*.05)%1));x.beginPath();x.arc(px,py,1.15,0,Math.PI*2);x.fillStyle='rgba(151,255,171,.20)';x.fill();}
+ frameId=requestAnimationFrame(paint);
+ }
+ function start(){cancelAnimationFrame(frameId);last=performance.now();paused=false;if(!reduce.matches)frameId=requestAnimationFrame(paint);else drawStill()}
+ resize();start();addEventListener('resize',()=>{resize();start()},{passive:true});reduce.addEventListener?.('change',start);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden){paused=true;cancelAnimationFrame(frameId)}else start()});
+ const toggleFull=()=>document.fullscreenElement?document.exitFullscreen?.():main.requestFullscreen?.();
+ document.getElementById('full').addEventListener('click',toggleFull);
+ addEventListener('keydown',e=>{if(e.key.toLowerCase()==='f'&&!e.ctrlKey&&!e.metaKey){toggleFull()}else if(e.code==='Space'&&!(e.target instanceof HTMLButtonElement)){e.preventDefault();if(paused)start();else{paused=true;cancelAnimationFrame(frameId)}}});
+})();
+</script>
+</body>
+</html>
